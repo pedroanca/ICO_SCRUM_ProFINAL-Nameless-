@@ -1,9 +1,9 @@
 ﻿# ICO_SCRUM_ProFINAL_Nameless
-#Repositorio que alojara el proyecto final de la materia de Ingeniería de Software I
+#	Repositorio que alojara el proyecto final de la materia de Ingeniería de Software I
 
 #	Nombre del Equipo: Nameless
 
-#Integrantes:
+#	Integrantes:
 #	Jonathan Miguel Hernadez Flores-->Product Owner
 #	Antúnez Camacho José Pedro------->Scrum Master
 #	José Pacheco Andrade------------->Scrum Team
