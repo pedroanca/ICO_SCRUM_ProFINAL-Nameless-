@@ -6,7 +6,6 @@ Nombre del Equipo: Nameless
 Integrantes:
 Jonathan Miguel Hernadez Flores-->Product Owner
 Antúnez Camacho José Pedro------->Scrum Master
-Luis Angel Garcia Cervantes------>Scrum Team
 José Pacheco Andrade------------->Scrum Team
 Jorge Alberto Lucio Santes------->Scrum Team
 
