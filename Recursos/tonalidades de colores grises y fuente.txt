@@ -1,0 +1,4 @@
+Titulos---->#313538
+Subtitulos->#343138
+Contenido-->#383132
+Fuente----->Trebuchet MS tamaño 24 titulos, 18 subtitulos, 14 contenido.
