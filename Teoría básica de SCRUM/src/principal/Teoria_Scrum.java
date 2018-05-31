@@ -276,7 +276,7 @@ public class Teoria_Scrum extends javax.swing.JFrame {
 
     private void BtnLink1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLink1ActionPerformed
         // TODO add your handling code here:
-       /* if (java.awt.Desktop.isDesktopSupported()) {
+       if (java.awt.Desktop.isDesktopSupported()) {
             java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
             if (desktop.isSupported(java.awt.Desktop.Action.BROWSE)) {
                 try {
@@ -286,7 +286,7 @@ public class Teoria_Scrum extends javax.swing.JFrame {
                 }
 
             }
-        }*/
+        }
     }//GEN-LAST:event_BtnLink1ActionPerformed
 
     private void link_1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_link_1MouseClicked
