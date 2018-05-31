@@ -25,7 +25,7 @@ public class Teoria_Scrum extends javax.swing.JFrame {
         setResizable(false);
         setLocationRelativeTo(this);
         //setExtendedState(MAXIMIZED_BOTH);
-        setTitle("Ingeniria De Software");
+        setTitle("Ingenieria De Software");
         setIconImage(new ImageIcon(getClass().getResource("../recursos/icono1.png")).getImage());
         
         ImageIcon logo = new ImageIcon(getClass().getResource("/recursos/logo.jpg"));
