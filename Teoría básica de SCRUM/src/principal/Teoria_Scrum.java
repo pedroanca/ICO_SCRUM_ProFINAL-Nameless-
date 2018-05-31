@@ -6,6 +6,8 @@
 package principal;
 
 import java.awt.Image;
+import java.io.IOException;
+import java.net.URISyntaxException;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
@@ -56,6 +58,9 @@ public class Teoria_Scrum extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         link_1 = new javax.swing.JButton();
+        BtnLink1 = new javax.swing.JButton();
+        BtnLink2 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
         Imagen3 = new javax.swing.JLabel();
         Imagen2 = new javax.swing.JLabel();
         Imagen_1 = new javax.swing.JLabel();
@@ -96,6 +101,26 @@ public class Teoria_Scrum extends javax.swing.JFrame {
             }
         });
 
+        BtnLink1.setBackground(new java.awt.Color(153, 153, 255));
+        BtnLink1.setFont(new java.awt.Font("Trebuchet MS", 3, 11)); // NOI18N
+        BtnLink1.setText("Más acerca de herramientas");
+        BtnLink1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnLink1ActionPerformed(evt);
+            }
+        });
+
+        BtnLink2.setBackground(new java.awt.Color(153, 153, 255));
+        BtnLink2.setFont(new java.awt.Font("Trebuchet MS", 3, 11)); // NOI18N
+        BtnLink2.setText("Procesos Ing. Software");
+        BtnLink2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnLink2ActionPerformed(evt);
+            }
+        });
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/icons8-enlace-externo-32.png"))); // NOI18N
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -107,17 +132,27 @@ public class Teoria_Scrum extends javax.swing.JFrame {
                 .addComponent(jButton1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton3)
-                .addContainerGap(495, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(BtnLink1)
+                .addGap(18, 18, 18)
+                .addComponent(BtnLink2)
+                .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3)
-                    .addComponent(jButton1)
-                    .addComponent(link_1))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jButton3)
+                        .addComponent(jButton1)
+                        .addComponent(link_1)
+                        .addComponent(BtnLink1)
+                        .addComponent(BtnLink2))
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         Imagen3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/Escudo-UNAM-1024x1151 (1).png"))); // NOI18N
@@ -128,7 +163,7 @@ public class Teoria_Scrum extends javax.swing.JFrame {
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
         jTextArea1.setRows(5);
-        jTextArea1.setText(" las metodologías ágiles mejoran la satisfacción del cliente dado que\n se involucrará y comprometerá a lo largo del proyecto. En cada etapa\n del desarrollo se informará al cliente sobre los progresos del mismo.De\n ese modo, el cliente puede sumar su  experiencia para optimizar las \n características del producto final. Se pueden evitar así numerosos \n malentendidos dado que el cliente poseerá en todo momento una \n completa visión del estado del producto.");
+        jTextArea1.setText(" Las metodologías ágiles mejoran la satisfacción del cliente dado que\n se involucrará y comprometerá a lo largo del proyecto. En cada etapa\n del desarrollo se informará al cliente sobre los progresos del mismo.De\n ese modo, el cliente puede sumar su  experiencia para optimizar las \n características del producto final. Se pueden evitar así numerosos \n malentendidos dado que el cliente poseerá en todo momento una \n completa visión del estado del producto.");
         jTextArea1.setBorder(null);
         jScrollPane1.setViewportView(jTextArea1);
 
@@ -184,9 +219,9 @@ public class Teoria_Scrum extends javax.swing.JFrame {
                         .addComponent(Imagen_1, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 461, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, Short.MAX_VALUE)
+                        .addGap(18, 23, Short.MAX_VALUE)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addContainerGap(25, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -196,12 +231,13 @@ public class Teoria_Scrum extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel2)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Imagen_1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(Imagen_1, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE))
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(78, 78, 78)
@@ -223,11 +259,40 @@ public class Teoria_Scrum extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void BtnLink2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLink2ActionPerformed
+        // TODO add your handling code here:
+        if (java.awt.Desktop.isDesktopSupported()) {
+            java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
+            if (desktop.isSupported(java.awt.Desktop.Action.BROWSE)) {
+                try {
+                    java.net.URI uri=new java.net.URI("https://sg.com.mx/revista/1/procesos-software");
+                    desktop.browse(uri);
+                } catch (URISyntaxException | IOException ex) {
+                }
+
+            }
+        }
+    }//GEN-LAST:event_BtnLink2ActionPerformed
+
+    private void BtnLink1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLink1ActionPerformed
+        // TODO add your handling code here:
+       /* if (java.awt.Desktop.isDesktopSupported()) {
+            java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
+            if (desktop.isSupported(java.awt.Desktop.Action.BROWSE)) {
+                try {
+                    java.net.URI uri=new java.net.URI("https://okhosting.com/blog/herramientas-de-desarrollo-de-software/");
+                    desktop.browse(uri);
+                } catch (URISyntaxException | IOException ex) {
+                }
+
+            }
+        }*/
+    }//GEN-LAST:event_BtnLink1ActionPerformed
+
     private void link_1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_link_1MouseClicked
         // TODO add your handling code here:
         Inicial VentanaInicial = new Inicial();
         VentanaInicial.setVisible(true);
-        
     }//GEN-LAST:event_link_1MouseClicked
 
     /**
@@ -239,6 +304,7 @@ public class Teoria_Scrum extends javax.swing.JFrame {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
+         
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -256,7 +322,7 @@ public class Teoria_Scrum extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Teoria_Scrum.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+          
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -266,6 +332,8 @@ public class Teoria_Scrum extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BtnLink1;
+    private javax.swing.JButton BtnLink2;
     private javax.swing.JLabel Imagen2;
     private javax.swing.JLabel Imagen3;
     private javax.swing.JLabel Imagen_1;
@@ -274,6 +342,7 @@ public class Teoria_Scrum extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;

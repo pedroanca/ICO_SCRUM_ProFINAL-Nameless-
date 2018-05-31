@@ -28,7 +28,7 @@
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
-    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,83,0,0,3,-85"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,83,0,0,3,-96"/>
   </AuxValues>
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
@@ -89,9 +89,9 @@
                               <Component id="Imagen_1" min="-2" pref="193" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="jScrollPane1" min="-2" pref="461" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="32767" attributes="0"/>
+                              <EmptySpace type="separate" pref="23" max="32767" attributes="0"/>
                               <Component id="jLabel2" min="-2" pref="182" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="25" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -105,13 +105,15 @@
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                          <Component id="jScrollPane1" min="-2" pref="135" max="-2" attributes="0"/>
-                          <Component id="Imagen_1" alignment="0" min="-2" pref="114" max="-2" attributes="0"/>
+                          <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                              <Component id="Imagen_1" min="-2" pref="114" max="-2" attributes="0"/>
+                              <Component id="jScrollPane1" min="-2" pref="135" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jScrollPane3" pref="120" max="32767" attributes="0"/>
-                          <Component id="jScrollPane2" pref="120" max="32767" attributes="0"/>
+                          <Component id="jScrollPane3" pref="111" max="32767" attributes="0"/>
+                          <Component id="jScrollPane2" pref="111" max="32767" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
@@ -157,20 +159,31 @@
                           <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="jButton3" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="495" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="BtnLink1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="BtnLink2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
+                      <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="link_1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="link_1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="BtnLink1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="BtnLink2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="jLabel3" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace pref="20" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -202,6 +215,41 @@
                   <Events>
                     <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="link_1MouseClicked"/>
                   </Events>
+                </Component>
+                <Component class="javax.swing.JButton" name="BtnLink1">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="99" red="99" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Trebuchet MS" size="11" style="3"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="M&#xe1;s acerca de herramientas"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnLink1ActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JButton" name="BtnLink2">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="99" red="99" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Trebuchet MS" size="11" style="3"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Procesos Ing. Software"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnLink2ActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel3">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/recursos/icons8-enlace-externo-32.png"/>
+                    </Property>
+                  </Properties>
                 </Component>
               </SubComponents>
             </Container>
@@ -239,7 +287,7 @@
                       <Font name="Trebuchet MS" size="14" style="0"/>
                     </Property>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value=" las metodolog&#xed;as &#xe1;giles mejoran la satisfacci&#xf3;n del cliente dado que&#xa; se involucrar&#xe1; y comprometer&#xe1; a lo largo del proyecto. En cada etapa&#xa; del desarrollo se informar&#xe1; al cliente sobre los progresos del mismo.De&#xa; ese modo, el cliente puede sumar su  experiencia para optimizar las &#xa; caracter&#xed;sticas del producto final. Se pueden evitar as&#xed; numerosos &#xa; malentendidos dado que el cliente poseer&#xe1; en todo momento una &#xa; completa visi&#xf3;n del estado del producto."/>
+                    <Property name="text" type="java.lang.String" value=" Las metodolog&#xed;as &#xe1;giles mejoran la satisfacci&#xf3;n del cliente dado que&#xa; se involucrar&#xe1; y comprometer&#xe1; a lo largo del proyecto. En cada etapa&#xa; del desarrollo se informar&#xe1; al cliente sobre los progresos del mismo.De&#xa; ese modo, el cliente puede sumar su  experiencia para optimizar las &#xa; caracter&#xed;sticas del producto final. Se pueden evitar as&#xed; numerosos &#xa; malentendidos dado que el cliente poseer&#xe1; en todo momento una &#xa; completa visi&#xf3;n del estado del producto."/>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
                     </Property>
