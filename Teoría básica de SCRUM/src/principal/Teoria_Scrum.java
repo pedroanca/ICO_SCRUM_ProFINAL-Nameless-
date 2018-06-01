@@ -55,8 +55,8 @@ public class Teoria_Scrum extends javax.swing.JFrame {
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        BtnInfo = new javax.swing.JButton();
+        BtnInfoSoft = new javax.swing.JButton();
         link_1 = new javax.swing.JButton();
         BtnLink1 = new javax.swing.JButton();
         BtnLink2 = new javax.swing.JButton();
@@ -87,11 +87,21 @@ public class Teoria_Scrum extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(230, 249, 255));
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jButton3.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
-        jButton3.setText("Desarrolladores");
+        BtnInfo.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
+        BtnInfo.setText("Desarrolladores");
+        BtnInfo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnInfoActionPerformed(evt);
+            }
+        });
 
-        jButton1.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
-        jButton1.setText("Teoría básica de ingeniería de software");
+        BtnInfoSoft.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
+        BtnInfoSoft.setText("Teoría básica de ingeniería de software");
+        BtnInfoSoft.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnInfoSoftActionPerformed(evt);
+            }
+        });
 
         link_1.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
         link_1.setText("Inicio ");
@@ -129,9 +139,9 @@ public class Teoria_Scrum extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(link_1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
+                .addComponent(BtnInfoSoft)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton3)
+                .addComponent(BtnInfo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -146,8 +156,8 @@ public class Teoria_Scrum extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton3)
-                        .addComponent(jButton1)
+                        .addComponent(BtnInfo)
+                        .addComponent(BtnInfoSoft)
                         .addComponent(link_1)
                         .addComponent(BtnLink1)
                         .addComponent(BtnLink2))
@@ -295,6 +305,18 @@ public class Teoria_Scrum extends javax.swing.JFrame {
         VentanaInicial.setVisible(true);
     }//GEN-LAST:event_link_1MouseClicked
 
+    private void BtnInfoSoftActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnInfoSoftActionPerformed
+        // TODO add your handling code here:
+        Teoria_Ing_Software VentanaSoft = new Teoria_Ing_Software();
+        VentanaSoft.setVisible(true);
+    }//GEN-LAST:event_BtnInfoSoftActionPerformed
+
+    private void BtnInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnInfoActionPerformed
+        // TODO add your handling code here:
+        Informacion VentanaInfo = new Informacion();
+        VentanaInfo.setVisible(true);
+    }//GEN-LAST:event_BtnInfoActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -332,14 +354,14 @@ public class Teoria_Scrum extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BtnInfo;
+    private javax.swing.JButton BtnInfoSoft;
     private javax.swing.JButton BtnLink1;
     private javax.swing.JButton BtnLink2;
     private javax.swing.JLabel Imagen2;
     private javax.swing.JLabel Imagen3;
     private javax.swing.JLabel Imagen_1;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
