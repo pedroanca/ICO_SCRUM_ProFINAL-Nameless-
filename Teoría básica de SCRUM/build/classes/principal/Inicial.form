@@ -364,6 +364,7 @@
         <Component class="javax.swing.JButton" name="jButtonInfo">
           <Properties>
             <Property name="text" type="java.lang.String" value="Mas info..."/>
+            <Property name="toolTipText" type="java.lang.String" value="Presiones para obtener informaci&#xf3;n"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonInfoActionPerformed"/>

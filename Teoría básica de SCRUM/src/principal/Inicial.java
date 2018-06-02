@@ -15,10 +15,11 @@ import javax.swing.JOptionPane;
  */
 public class Inicial extends javax.swing.JFrame {
 
-    private String Texto = "La ingenería de software compone varias metodologías,\n"
-            + " con las cuales se busca elavoarar un producto de primera \n"
-            + " clase y de calidad. \n"
-            + "Sin la ingenería de software, el mundo actual sería un caos. ";
+    private String Texto = "“La ingeniería de software es el establecimiento \n"
+            + "y uso de principios robustos de la ingeniería \n"
+            + "a fin de obtener económicamente software \n "
+            + "que sea fiable y que funcione eficientemente \n"
+            + " sobre máquinas reales” ";
 
     /**
      * Creates new form Inicial
@@ -139,6 +140,7 @@ public class Inicial extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTextAreaInfo);
 
         jButtonInfo.setText("Mas info...");
+        jButtonInfo.setToolTipText("Presiones para obtener información");
         jButtonInfo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonInfoActionPerformed(evt);
