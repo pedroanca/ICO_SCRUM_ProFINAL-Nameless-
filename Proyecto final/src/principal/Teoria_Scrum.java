@@ -31,14 +31,11 @@ public class Teoria_Scrum extends javax.swing.JFrame {
         ImageIcon icono = new ImageIcon(logo.getImage().getScaledInstance(Imagen_1.getWidth(), Imagen_1.getHeight(), Image.SCALE_DEFAULT));
         Imagen_1.setIcon(icono);
         this.repaint();
-        
+
         /*ImageIcon logo1 = new ImageIcon(getClass().getResource("/resursos/Escudo.png"));
         ImageIcon icono1 = new ImageIcon(logo1.getImage().getScaledInstance(Imagen2.getWidth(), Imagen2.getHeight(), Image.SCALE_DEFAULT));
         Imagen2.setIcon(icono1);
         this.repaint();*/
-        
-        
-       
     }
 
     /**
@@ -292,7 +289,7 @@ public class Teoria_Scrum extends javax.swing.JFrame {
             java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
             if (desktop.isSupported(java.awt.Desktop.Action.BROWSE)) {
                 try {
-                    java.net.URI uri=new java.net.URI("https://sg.com.mx/revista/1/procesos-software");
+                    java.net.URI uri = new java.net.URI("https://sg.com.mx/revista/1/procesos-software");
                     desktop.browse(uri);
                 } catch (URISyntaxException | IOException ex) {
                 }
@@ -303,11 +300,11 @@ public class Teoria_Scrum extends javax.swing.JFrame {
 
     private void BtnLink1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLink1ActionPerformed
         // TODO add your handling code here:
-       if (java.awt.Desktop.isDesktopSupported()) {
+        if (java.awt.Desktop.isDesktopSupported()) {
             java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
             if (desktop.isSupported(java.awt.Desktop.Action.BROWSE)) {
                 try {
-                    java.net.URI uri=new java.net.URI("https://okhosting.com/blog/herramientas-de-desarrollo-de-software/");
+                    java.net.URI uri = new java.net.URI("https://okhosting.com/blog/herramientas-de-desarrollo-de-software/");
                     desktop.browse(uri);
                 } catch (URISyntaxException | IOException ex) {
                 }
@@ -328,18 +325,21 @@ public class Teoria_Scrum extends javax.swing.JFrame {
         // TODO add your handling code here:
         Teoria_Ing_Software VentanaSoft = new Teoria_Ing_Software();
         VentanaSoft.setVisible(true);
+        dispose();
     }//GEN-LAST:event_BtnTeoriaActionPerformed
 
     private void BtnDesarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnDesarActionPerformed
         // TODO add your handling code here:
         Informacion VentanaInfo = new Informacion();
         VentanaInfo.setVisible(true);
+        dispose();
     }//GEN-LAST:event_BtnDesarActionPerformed
 
     private void BtnInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnInicioActionPerformed
         // TODO add your handling code here:
         Inicial VentanaInicio = new Inicial();
         VentanaInicio.setVisible(true);
+        dispose();
     }//GEN-LAST:event_BtnInicioActionPerformed
 
     /**
@@ -351,7 +351,7 @@ public class Teoria_Scrum extends javax.swing.JFrame {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
-         
+
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -369,7 +369,7 @@ public class Teoria_Scrum extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Teoria_Scrum.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-          
+
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {

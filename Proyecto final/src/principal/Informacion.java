@@ -26,8 +26,7 @@ public class Informacion extends javax.swing.JFrame {
         //setExtendedState(MAXIMIZED_BOTH);
         setTitle("Ingenieria De Software");
         setIconImage(new ImageIcon(getClass().getResource("../recursos/icono1.png")).getImage());
-        
-        
+
     }
 
     /**
@@ -397,10 +396,13 @@ public class Informacion extends javax.swing.JFrame {
     private void homebttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_homebttnActionPerformed
         Inicial VentanaInicial = new Inicial();
         VentanaInicial.setVisible(true);
+        dispose();
     }//GEN-LAST:event_homebttnActionPerformed
 
     private void scrumbttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_scrumbttnActionPerformed
-        // TODO add your handling code here:
+           Teoria_Scrum teoria_Scrum    =   new Teoria_Scrum();
+           teoria_Scrum.setVisible(true);
+           dispose();
     }//GEN-LAST:event_scrumbttnActionPerformed
 
     private void scrumbttnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_scrumbttnMouseClicked
@@ -442,7 +444,7 @@ public class Informacion extends javax.swing.JFrame {
 
     private void fbpaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fbpaMouseClicked
         // TODO add your handling code here:
-                if (java.awt.Desktop.isDesktopSupported()) {
+        if (java.awt.Desktop.isDesktopSupported()) {
             java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
             if (desktop.isSupported(java.awt.Desktop.Action.BROWSE)) {
                 try {
@@ -453,12 +455,12 @@ public class Informacion extends javax.swing.JFrame {
 
             }
         }
-        
+
     }//GEN-LAST:event_fbpaMouseClicked
 
     private void gitpaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gitpaMouseClicked
         // TODO add your handling code here:
-                   if (java.awt.Desktop.isDesktopSupported()) {
+        if (java.awt.Desktop.isDesktopSupported()) {
             java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
             if (desktop.isSupported(java.awt.Desktop.Action.BROWSE)) {
                 try {
@@ -469,12 +471,12 @@ public class Informacion extends javax.swing.JFrame {
 
             }
         }
-        
+
     }//GEN-LAST:event_gitpaMouseClicked
 
     private void fbpMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fbpMouseClicked
         // TODO add your handling code here:
-                           if (java.awt.Desktop.isDesktopSupported()) {
+        if (java.awt.Desktop.isDesktopSupported()) {
             java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
             if (desktop.isSupported(java.awt.Desktop.Action.BROWSE)) {
                 try {
@@ -489,7 +491,7 @@ public class Informacion extends javax.swing.JFrame {
 
     private void gitpMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gitpMouseClicked
         // TODO add your handling code here:
-                           if (java.awt.Desktop.isDesktopSupported()) {
+        if (java.awt.Desktop.isDesktopSupported()) {
             java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
             if (desktop.isSupported(java.awt.Desktop.Action.BROWSE)) {
                 try {
@@ -506,6 +508,7 @@ public class Informacion extends javax.swing.JFrame {
         // TODO add your handling code here:
         Teoria_Ing_Software VentanaSoft = new Teoria_Ing_Software();
         VentanaSoft.setVisible(true);
+        dispose();
     }//GEN-LAST:event_BtnTeorSoftActionPerformed
 
     /**

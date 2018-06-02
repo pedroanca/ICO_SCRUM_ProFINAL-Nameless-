@@ -21,6 +21,7 @@ public class Inicial extends javax.swing.JFrame {
             + "que sea fiable y que funcione eficientemente \n"
             + " sobre máquinas reales” ";
 
+   
     /**
      * Creates new form Inicial
      */
@@ -297,24 +298,26 @@ public class Inicial extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonSalidaActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        Teoria_Scrum teoria_Scrum = new Teoria_Scrum();
+       Teoria_Scrum teoria_Scrum        = new Teoria_Scrum();
         teoria_Scrum.setVisible(true);
-
+        dispose();
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-        Informacion informacion = new Informacion();
+       Informacion informacion          = new Informacion();
         informacion.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
         Teoria_Ing_Software ing_Software = new Teoria_Ing_Software();
         ing_Software.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     private void jButtonInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonInfoActionPerformed
         jTextAreaInfo.setText(Texto);
-        
+
     }//GEN-LAST:event_jButtonInfoActionPerformed
 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked

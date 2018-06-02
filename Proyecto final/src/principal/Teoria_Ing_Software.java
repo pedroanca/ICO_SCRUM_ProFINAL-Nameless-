@@ -14,46 +14,47 @@ import javax.swing.JOptionPane;
  * @author Crack-ALS
  */
 public class Teoria_Ing_Software extends javax.swing.JFrame {
-    private String  concepto_1 =   "¿Qué es IS?\n" +
-"\n" +
-"    La ingeniería de software es la aplicación de un enfoque sistemático, \n"
-    + " disciplinado y cuantificable al desarrollo,\n"
-    + " operación y mantenimiento de software,\n" +
-"    y el estudio de estos enfoques, es decir,\n"
-    + " el estudio de las aplicaciones de la ingeniería al software. \n "
-    + "Integra matemáticas, ciencias de la computación y prácticas \n" +
-    "cuyos orígenes se encuentran en la ingeniería.";
-    
-    private String procesos = "    Procesos de desarrollo\n" +
-"\n" +
-"    • El procedimiento es una receta para lograr el cometido.\n" +
-"    • Establece las actividades principales.\n" +
-"    • Cada actividad tiene criterios de entrada y salida.\n" +
-"    • Utiliza recursos y esta sujeto a una serie de restricciones\n";
-    
-    private String PsP  =   "PSP, Personal Software Proccess.\n" +
-"\n" +
-"El Proceso Software Personal (En Inglés, Personal Software Process o PSP) \n"
- + " es un proceso individual cuyo objetivo es ayudar a los ingenieros \n"
- + " en software a medir y mejorar su productividad personal.\n" +
-"El PSP suele enseñarse exclusivamente a profesionales, \n "
- + "no obstante éste ha comenzado a incluirse como parte de cursos universitarios.\n" +
-"Los pasos de registro de información a detalle en el nivel de medición pueden resultar frustrantes cuando se tiene presión de tiempo. ";
-    
-    private String TsP  =   "El TSP \n"+
-            " Es una metodología para dirigir el trabajo de mejora y desarrollo de software además de establecer \n"
-            + " un entorno donde el trabajo efectivo de equipo sea normal y natural.\n" +
-"Objetivos del TSP\n" +
-"\n" +
-"Generar un marco basado en PSP Desarrollar productos en varios ciclos Establecer estándares \n"
-+ " para medir la calidad y el comportamiento Proporcionar métricas \n"
-+ " para equipos Evaluar roles y equipos Guías para solución de problemas en equipos.";
 
-private String Rup  =   "El RUP \n"
-        +"Es un proceso de ingeniería del software que agrupa las 6 mejores prácticas \n"
-    + " de desarrollo software que existen en el mercado\n" + 
-"Desarrollar Iterativamente Gestionar Requisitos Usar Arquitecturas de Componentes Modelar Visualmente (UML) \n "
- + "Continuamente Verificar Calidad del Software Controlar Cambios en el Software ";    
+    private String concepto_1 = "¿Qué es IS?\n"
+            + "\n"
+            + "    La ingeniería de software es la aplicación de un enfoque sistemático, \n"
+            + " disciplinado y cuantificable al desarrollo,\n"
+            + " operación y mantenimiento de software,\n"
+            + "    y el estudio de estos enfoques, es decir,\n"
+            + " el estudio de las aplicaciones de la ingeniería al software. \n "
+            + "Integra matemáticas, ciencias de la computación y prácticas \n"
+            + "cuyos orígenes se encuentran en la ingeniería.";
+
+    private String procesos = "    Procesos de desarrollo\n"
+            + "\n"
+            + "    • El procedimiento es una receta para lograr el cometido.\n"
+            + "    • Establece las actividades principales.\n"
+            + "    • Cada actividad tiene criterios de entrada y salida.\n"
+            + "    • Utiliza recursos y esta sujeto a una serie de restricciones\n";
+
+    private String PsP = "PSP, Personal Software Proccess.\n"
+            + "\n"
+            + "El Proceso Software Personal (En Inglés, Personal Software Process o PSP) \n"
+            + " es un proceso individual cuyo objetivo es ayudar a los ingenieros \n"
+            + " en software a medir y mejorar su productividad personal.\n"
+            + "El PSP suele enseñarse exclusivamente a profesionales, \n "
+            + "no obstante éste ha comenzado a incluirse como parte de cursos universitarios.\n"
+            + "Los pasos de registro de información a detalle en el nivel de medición pueden resultar frustrantes cuando se tiene presión de tiempo. ";
+
+    private String TsP = "El TSP \n"
+            + " Es una metodología para dirigir el trabajo de mejora y desarrollo de software además de establecer \n"
+            + " un entorno donde el trabajo efectivo de equipo sea normal y natural.\n"
+            + "Objetivos del TSP\n"
+            + "\n"
+            + "Generar un marco basado en PSP Desarrollar productos en varios ciclos Establecer estándares \n"
+            + " para medir la calidad y el comportamiento Proporcionar métricas \n"
+            + " para equipos Evaluar roles y equipos Guías para solución de problemas en equipos.";
+
+    private String Rup = "El RUP \n"
+            + "Es un proceso de ingeniería del software que agrupa las 6 mejores prácticas \n"
+            + " de desarrollo software que existen en el mercado\n"
+            + "Desarrollar Iterativamente Gestionar Requisitos Usar Arquitecturas de Componentes Modelar Visualmente (UML) \n "
+            + "Continuamente Verificar Calidad del Software Controlar Cambios en el Software ";
 
     /**
      * Creates new form Teoria_Ing_Software
@@ -75,9 +76,9 @@ private String Rup  =   "El RUP \n"
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        link_1 = new javax.swing.JButton();
+        buttonInfoDevelopers = new javax.swing.JButton();
+        buttonTeoriaScrum = new javax.swing.JButton();
+        buttonPaginaInicial = new javax.swing.JButton();
         BtnLink1 = new javax.swing.JButton();
         BtnLink2 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
@@ -103,17 +104,32 @@ private String Rup  =   "El RUP \n"
         jPanel2.setBackground(new java.awt.Color(230, 249, 255));
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jButton3.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
-        jButton3.setText("Desarrolladores");
+        buttonInfoDevelopers.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
+        buttonInfoDevelopers.setText("Desarrolladores");
+        buttonInfoDevelopers.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonInfoDevelopersActionPerformed(evt);
+            }
+        });
 
-        jButton1.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
-        jButton1.setText("Teoría básica de ingeniería de software");
+        buttonTeoriaScrum.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
+        buttonTeoriaScrum.setText("Teoría básica de Scrum");
+        buttonTeoriaScrum.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonTeoriaScrumActionPerformed(evt);
+            }
+        });
 
-        link_1.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
-        link_1.setText("Inicio ");
-        link_1.addMouseListener(new java.awt.event.MouseAdapter() {
+        buttonPaginaInicial.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
+        buttonPaginaInicial.setText("Inicio ");
+        buttonPaginaInicial.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                link_1MouseClicked(evt);
+                buttonPaginaInicialMouseClicked(evt);
+            }
+        });
+        buttonPaginaInicial.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonPaginaInicialActionPerformed(evt);
             }
         });
 
@@ -142,13 +158,13 @@ private String Rup  =   "El RUP \n"
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(link_1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton3)
+                .addGap(23, 23, 23)
+                .addComponent(buttonPaginaInicial)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(buttonTeoriaScrum)
+                .addGap(57, 57, 57)
+                .addComponent(buttonInfoDevelopers)
+                .addGap(78, 78, 78)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(BtnLink1)
@@ -162,9 +178,9 @@ private String Rup  =   "El RUP \n"
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton3)
-                        .addComponent(jButton1)
-                        .addComponent(link_1)
+                        .addComponent(buttonInfoDevelopers)
+                        .addComponent(buttonTeoriaScrum)
+                        .addComponent(buttonPaginaInicial)
                         .addComponent(BtnLink1)
                         .addComponent(BtnLink2))
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -247,50 +263,50 @@ private String Rup  =   "El RUP \n"
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButtonInfo_2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(28, 28, 28))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
                                 .addComponent(jLabel2)
                                 .addGap(47, 47, 47))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jButtonSalida)
-                                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(33, 33, 33))))))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(jButtonSalida)
+                                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jButtonInfo_2))
+                                .addContainerGap())))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(9, 9, 9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButtonInfo_1))
+                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(31, 31, 31)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButtonSalida))
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButtonInfo_1))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButtonInfo_2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButtonSalida)
+                        .addComponent(jButtonInfo_2)))
                 .addContainerGap())
         );
 
@@ -308,11 +324,11 @@ private String Rup  =   "El RUP \n"
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void link_1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_link_1MouseClicked
+    private void buttonPaginaInicialMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonPaginaInicialMouseClicked
         // TODO add your handling code here:
         Inicial VentanaInicial = new Inicial();
         VentanaInicial.setVisible(true);
-    }//GEN-LAST:event_link_1MouseClicked
+    }//GEN-LAST:event_buttonPaginaInicialMouseClicked
 
     private void BtnLink1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLink1ActionPerformed
         // TODO add your handling code here:
@@ -320,7 +336,7 @@ private String Rup  =   "El RUP \n"
             java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
             if (desktop.isSupported(java.awt.Desktop.Action.BROWSE)) {
                 try {
-                    java.net.URI uri=new java.net.URI("https://okhosting.com/blog/herramientas-de-desarrollo-de-software/");
+                    java.net.URI uri = new java.net.URI("https://okhosting.com/blog/herramientas-de-desarrollo-de-software/");
                     desktop.browse(uri);
                 } catch (URISyntaxException | IOException ex) {
                 }
@@ -335,7 +351,7 @@ private String Rup  =   "El RUP \n"
             java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
             if (desktop.isSupported(java.awt.Desktop.Action.BROWSE)) {
                 try {
-                    java.net.URI uri=new java.net.URI("https://sg.com.mx/revista/1/procesos-software");
+                    java.net.URI uri = new java.net.URI("https://sg.com.mx/revista/1/procesos-software");
                     desktop.browse(uri);
                 } catch (URISyntaxException | IOException ex) {
                 }
@@ -345,17 +361,17 @@ private String Rup  =   "El RUP \n"
     }//GEN-LAST:event_BtnLink2ActionPerformed
 
     private void jButtonInfo_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonInfo_2ActionPerformed
-         jTextAreaInfo_2.setText(TsP);
-         jTextAreaInfo_2.setEditable(false);
-         
-         jTextAreaRup.setText(Rup + "\n" + "\n" + PsP);
-         jTextAreaRup.setEditable(false);
+        jTextAreaInfo_2.setText(TsP);
+        jTextAreaInfo_2.setEditable(false);
+
+        jTextAreaRup.setText(Rup + "\n" + "\n" + PsP);
+        jTextAreaRup.setEditable(false);
     }//GEN-LAST:event_jButtonInfo_2ActionPerformed
 
     private void jButtonInfo_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonInfo_1ActionPerformed
         jTextAreaInfo_1.setText(concepto_1);
         jTextAreaInfo_1.setEditable(false);
-        
+
         jTextAreaProcesos.setText(procesos);
         jTextAreaProcesos.setEditable(false);
 
@@ -368,6 +384,24 @@ private String Rup  =   "El RUP \n"
             System.exit(0);
         }
     }//GEN-LAST:event_jButtonSalidaActionPerformed
+
+    private void buttonTeoriaScrumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonTeoriaScrumActionPerformed
+        Teoria_Scrum teoria_Scrum = new Teoria_Scrum();
+        teoria_Scrum.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_buttonTeoriaScrumActionPerformed
+
+    private void buttonInfoDevelopersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonInfoDevelopersActionPerformed
+        Informacion informacion = new Informacion();
+        informacion.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_buttonInfoDevelopersActionPerformed
+
+    private void buttonPaginaInicialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonPaginaInicialActionPerformed
+        Inicial inicial = new Inicial();
+        inicial.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_buttonPaginaInicialActionPerformed
 
     /**
      * @param args the command line arguments
@@ -407,8 +441,9 @@ private String Rup  =   "El RUP \n"
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnLink1;
     private javax.swing.JButton BtnLink2;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton buttonInfoDevelopers;
+    private javax.swing.JButton buttonPaginaInicial;
+    private javax.swing.JButton buttonTeoriaScrum;
     private javax.swing.JButton jButtonInfo_1;
     private javax.swing.JButton jButtonInfo_2;
     private javax.swing.JButton jButtonSalida;
@@ -425,6 +460,5 @@ private String Rup  =   "El RUP \n"
     private javax.swing.JTextArea jTextAreaInfo_2;
     private javax.swing.JTextArea jTextAreaProcesos;
     private javax.swing.JTextArea jTextAreaRup;
-    private javax.swing.JButton link_1;
     // End of variables declaration//GEN-END:variables
 }
