@@ -208,7 +208,7 @@ public class Informacion extends javax.swing.JFrame {
         jLabel10.setText("Correo: josepacheco3264@gmail.com");
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel11.setText("6o. Semestre");
+        jLabel11.setText("6o. Semestre número de cuenta: 416029879");
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel12.setText("Leer, correr en las mañanas, programar y salir con los amigos");
@@ -217,13 +217,13 @@ public class Informacion extends javax.swing.JFrame {
         jLabel13.setText("Escuchar música, hacer ejercicio, llevar una dieta saludable, salir con amigos ");
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel14.setText("6o. Semestre");
+        jLabel14.setText("6o. Semestre Número de cuenta:416019890");
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel15.setText("Escuchar música, leer, ver documentales, dormir, salir con amigos a beber ");
 
         jLabel16.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel16.setText("6o. Semestre");
+        jLabel16.setText("6o. Semestre Número de cuenta: 416038112");
 
         fbj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/Webp.net-resizeimage (1).png"))); // NOI18N
         fbj.addMouseListener(new java.awt.event.MouseAdapter() {
