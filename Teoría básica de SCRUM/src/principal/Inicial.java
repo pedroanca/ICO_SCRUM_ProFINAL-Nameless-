@@ -133,7 +133,8 @@ public class Inicial extends javax.swing.JFrame {
                 .addGap(51, 51, 51))
         );
 
-        jTextAreaInfo.setBackground(new java.awt.Color(204, 204, 204));
+        jTextAreaInfo.setEditable(false);
+        jTextAreaInfo.setBackground(new java.awt.Color(224, 224, 224));
         jTextAreaInfo.setColumns(20);
         jTextAreaInfo.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
         jTextAreaInfo.setRows(5);
