@@ -49,7 +49,7 @@ public class Informacion extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         homebttn = new javax.swing.JButton();
         scrumbttn = new javax.swing.JButton();
-        ingsofbttn = new javax.swing.JButton();
+        BtnTeorSoft = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -119,7 +119,6 @@ public class Informacion extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Acerca de los Desarrolladores");
         setBackground(new java.awt.Color(255, 255, 255));
-        setPreferredSize(new java.awt.Dimension(949, 595));
 
         jTabbedPane2.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -147,7 +146,12 @@ public class Informacion extends javax.swing.JFrame {
             }
         });
 
-        ingsofbttn.setText("Teoría de ingeniería de software");
+        BtnTeorSoft.setText("Teoría de ingeniería de software");
+        BtnTeorSoft.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnTeorSoftActionPerformed(evt);
+            }
+        });
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/Webp.net-resizeimage.png"))); // NOI18N
 
@@ -161,7 +165,7 @@ public class Informacion extends javax.swing.JFrame {
                 .addGap(50, 50, 50)
                 .addComponent(scrumbttn)
                 .addGap(44, 44, 44)
-                .addComponent(ingsofbttn)
+                .addComponent(BtnTeorSoft)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 112, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(119, 119, 119))
@@ -174,7 +178,7 @@ public class Informacion extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(ingsofbttn)
+                            .addComponent(BtnTeorSoft)
                             .addComponent(scrumbttn)
                             .addComponent(homebttn))))
                 .addGap(22, 22, 22))
@@ -211,13 +215,13 @@ public class Informacion extends javax.swing.JFrame {
         jLabel12.setText("Leer, correr en las mañanas, programar y salir con los amigos");
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel13.setText("Escuchar música, hacer ejercicio, llevar una dieta saludable, salir con amigos a beber");
+        jLabel13.setText("Escuchar música, hacer ejercicio, llevar una dieta saludable, salir con amigos ");
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel14.setText("6o. Semestre");
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel15.setText("Escuchar música, leer, ver documentales, dormir, salir con amigos");
+        jLabel15.setText("Escuchar música, leer, ver documentales, dormir, salir con amigos a beber ");
 
         jLabel16.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel16.setText("6o. Semestre");
@@ -498,6 +502,12 @@ public class Informacion extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_gitpMouseClicked
 
+    private void BtnTeorSoftActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnTeorSoftActionPerformed
+        // TODO add your handling code here:
+        Teoria_Ing_Software VentanaSoft = new Teoria_Ing_Software();
+        VentanaSoft.setVisible(true);
+    }//GEN-LAST:event_BtnTeorSoftActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -534,6 +544,7 @@ public class Informacion extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BtnTeorSoft;
     private javax.swing.JLabel fbj;
     private javax.swing.JLabel fbp;
     private javax.swing.JLabel fbpa;
@@ -541,7 +552,6 @@ public class Informacion extends javax.swing.JFrame {
     private javax.swing.JLabel gitp;
     private javax.swing.JLabel gitpa;
     private javax.swing.JButton homebttn;
-    private javax.swing.JButton ingsofbttn;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
